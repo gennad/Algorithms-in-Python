@@ -7,7 +7,10 @@ def binary(seq, x):
             l = m + 1
         else:
             r = m
-    return l
+    if seq[l] == x:
+        return l
+    else:
+        return -1
 
 if __name__ == '__main__':
-    print binary([1,2,3,4,5,6,7,8], 8)
+    print binary([1,2,3,4,5,6,7,8], 10)
